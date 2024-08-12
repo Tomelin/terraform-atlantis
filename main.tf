@@ -3,3 +3,8 @@ resource "null_resource" "default" {
     command = "echo 'Hello World'"
   }
 }
+
+resource "local_file" "foo" {
+  content  = "foo!"
+  filename = "${path.module}/foo.txt"
+}
