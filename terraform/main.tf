@@ -6,5 +6,5 @@ resource "null_resource" "default" {
 
 resource "local_file" "foo" {
   content  = "foo"
-  filename = "${path.module}/foo.txt"
+  filename = "${path.module}/foo.tmp"
 }
